@@ -1,7 +1,8 @@
 # HRR-D: Harmonisk Rotations-Rumtid med Dämpning
 
 **Version:** 4.0  
-**Författare:** Hendrik Danielsson  
+**Författare:** Hendrik Danielsson
+📩 Kontakt: [danielssonhendrik@gmail.com](mailto:danielssonhendrik@gmail.com)
 **Status:** Fullständig modell publicerad ✅
 
 ---
