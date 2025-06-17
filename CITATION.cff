@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite this work as:"
+authors:
+  - family-names: Danielsson
+    given-names: Hendrik
+title: "HRR-D: Harmonisk Rotations-Rumtid med Dämpning"
+version: "4.0"
+date-released: 2025-06-17
+doi: "10.0000/hrr-d"
+url: "https://github.com/rotationgravity/HRR-D"
