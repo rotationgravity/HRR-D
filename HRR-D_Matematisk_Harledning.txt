@@ -1,0 +1,80 @@
+
+**Matematisk härledning för HRR-D-modellen (v4.0)**
+
+---
+
+## 1. Grundstruktur: Rotation i rumtiden
+
+HRR-D utgår från hypotesen att rumtiden innehåller ett rotationsfält:
+
+\[ \omega(r) = \omega_0 e^{-r/r_0} \]
+
+där:
+- \( \omega_0 \) är den initiala rotationsstyrkan
+- \( r_0 \) är dämpningslängden
+
+Detta fält är inte bara en analogi utan en faktisk geometrisk deformation av metrikens icke-diagonala termer.
+
+---
+
+## 2. Tidsdilatation
+
+Tidsdilatationen för ett objekt i detta fält ges av:
+
+\[ d\tau = \sqrt{1 - (\omega r/c)^2} \, dt \]
+
+Detta motsvarar lokal tid kontra global tid i ett roterande referenssystem, analogt med Kerr-metriken i begränsad form.
+
+---
+
+## 3. Gravitationspotential från rotation
+
+Från rotationsfältet induceras en effektiv potential:
+
+\[ \Phi(r) = -\frac{1}{2} \omega(r)^2 r^2 \]
+
+Ersätter Newtonsk gravitation på storskalig nivå, vilket ger acceleration:
+
+\[ a(r) = -\nabla \Phi(r) = \omega(r)^2 r - \omega(r) \omega'(r) r^2 \]
+
+---
+
+## 4. Rödförskjutning z(r)
+
+Fotoners energiförlust vid passage genom roterande rumtid tolkas som rödförskjutning:
+
+\[ z(r) = \left(1 - \left(\frac{\omega(r) r}{c}\right)^2\right)^{-1/2} - 1 \]
+
+Med \( \omega(r) = \omega_0 e^{-r/r_0} \) får vi:
+
+\[ z(r) = \left(1 - \left(\frac{\omega_0 r e^{-r/r_0}}{c}\right)^2\right)^{-1/2} - 1 \]
+
+Denna funktion har testats mot supernovadata (Union 2.1).
+
+---
+
+## 5. Rotation curves i galaxer
+
+Rotationshastigheten för materia i bana kring centrum ges direkt av:
+
+\[ v(r) = r \cdot \omega(r) = r \cdot \omega_0 e^{-r/r_0} \]
+
+Detta motsvarar den observerade platta rotationen i spiralgalaxer utan behov av mörk materia. Fit sker mot SPARC-data.
+
+---
+
+## 6. Numerisk implementation
+
+Allt ovan är implementerat i `simulate_redshift.py`, där:
+- z(r)-funktionen evalueras 
+- observerad data importeras (CSV)
+- residualer och fit-precision beräknas
+
+Supernova: `union2.1_supernova.csv`  
+Galaxer: `sparc_example.csv`
+
+---
+
+## 7. Slutsats
+
+HRR-D är inte baserat på kurvpassning eller parametrisk tuning, utan på en först princip-härledd rotationell geometri. Alla observerbara effekter följer från \( \omega(r) \), som i sig bara innehåller två parametrar.

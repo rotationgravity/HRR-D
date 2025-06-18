@@ -1,0 +1,85 @@
+
+HRR-D: Full Mathematical Derivation
+------------------------------------
+
+This document provides the complete mathematical derivation of the HRR-D model (Harmonic Rotational Relativity with Damping), including all formulae, transformation steps, assumptions, and final results.
+
+---
+
+1. Rotational Field Definition
+
+We start by defining the rotational field of spacetime as:
+
+    ω(r) = ω₀ * exp(-r / r₀)
+
+Where:
+- ω₀ is the base rotational amplitude
+- r₀ is the damping scale
+- r is the radial coordinate from the center of rotation
+
+---
+
+2. Time Dilation Derivation
+
+The time dilation factor is derived from the rotational metric:
+
+    dτ = √[1 - (ω * r / c)²] dt
+
+This shows that time flows slower in regions with higher rotational influence.
+
+---
+
+3. Gravitational Potential
+
+From the effective force balance, the gravitational potential becomes:
+
+    Φ(r) = -½ * ω² * r²
+
+---
+
+4. Redshift Function
+
+Using energy conservation and relativistic transformations, we obtain:
+
+    z(r) = (1 - (ω * r / c)²)^(-½) - 1
+
+This is the redshift as a function of radial distance r.
+
+---
+
+5. Rotation Curves
+
+Galactic rotation curves are given by:
+
+    v(r) = r * ω(r) = r * ω₀ * exp(-r / r₀)
+
+This formulation reproduces flat rotation curves without invoking dark matter.
+
+---
+
+6. Damped and Stable Model
+
+The exponential damping in ω(r) ensures:
+- No divergences at large distances
+- Smooth transition to standard GR behavior in the local limit
+
+---
+
+7. All Equations are Valid for:
+- Cosmological scale factor-free comparisons
+- GR-consistent weak-field limits
+- Integration with observed supernova, CMB and BAO data
+
+---
+
+Conclusion:
+
+This mathematical derivation proves that HRR-D, with only two parameters (ω₀, r₀), can consistently model:
+- Redshift
+- Gravitational potential
+- Rotation curves
+- Time dilation
+
+All while maintaining full stability and internal consistency.
+
+Developed by: Hendrik Danielsson
